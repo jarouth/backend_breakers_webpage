@@ -42,7 +42,7 @@
             transition: transform 0.2s;
         }
 
-        .card:hover, .card-jason:hover,.card-jack:hover {
+        .card-jason:hover,.card-jack:hover, .card-ilton:hover {
             transform: scale(1.05);
         }
 
@@ -96,21 +96,18 @@
 
 <div class="container">
     <div class="card-jack">
-        <div class="jack">
-            <h2>Jack King</h2>
-            <p>Fullstack Developer</p>
-            <button onclick="toggleBio('bio1')">Show Bio</button>
-                <div class="bio" id="bio1">
-                    <img src="img/Picture%20of%20Jack.jpg" alt="Photo of Jack King">
-                    <img src="img/hacker.png" alt="Picture of a Hacker">
-                    <p>Jack is a skilled fullstack developer who aspires to be an ethical hacker.</p>
-                    <a href="https://github.com/JackK1014">GitHub</a>
-                    <a href="https://www.linkedin.com/in/jack-king-690015290/">LinkedIn</a>
-                </div>
+        <h2>Jack King</h2>
+        <p>Fullstack Developer</p>
+        <button onclick="toggleBio('bio1')">Show Bio</button>
+        <div class="bio" id="bio1">
+            <img src="img/Picture%20of%20Jack.jpg" alt="Photo of Jack King">
+            <img src="img/hacker.png" alt="Picture of a Hacker">
+            <p>Jack is a skilled fullstack developer who aspires to be an ethical hacker.</p>
+            <a href="https://github.com/JackK1014">GitHub</a>
+            <a href="https://www.linkedin.com/in/jack-king-690015290/">LinkedIn</a>
         </div>
     </div>
     <div class="card-ilton">
-        <div class="ilton">
         <h2>Ilton da Costa Neto</h2>
         <p>Full Stack</p>
         <button onclick="toggleBio('bio3')">Show Bio</button>
@@ -122,7 +119,7 @@
                     <li><a href=https://www.linkedin.com/in/ilton-da-costa-neto/">LinkedIn</a></li>
                 </ul>
             </div>
-        </div>
+    </div>
    <div class="card-jason">
             <h2>Jason Routh</h2>
             <p>Full-Stack Developer</p>
@@ -136,6 +133,7 @@
                 
             </div>
     </div>
+</div>
 
     <script>
         function toggleBio(bioId) {

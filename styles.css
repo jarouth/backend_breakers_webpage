@@ -1,4 +1,4 @@
-.ilton img {
+.card-ilton img, .card-jack img {
     max-width: 50%;
 }
 
@@ -6,16 +6,22 @@
     background: aquamarine;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.jack img{
-    max-width: 50%;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(30% - 40px);
+    text-align: center;
+    transition: transform 0.2s;
 }
 
 .card-jack{
     background: #007BFF;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(30% - 40px);
+    text-align: center;
+    transition: transform 0.2s;
 }
 
 .card-jason {
@@ -30,7 +36,7 @@
     transition: transform 0.2s;
 }
 
-.ilton button {
+.card-ilton button {
         background: black;
         color: white;
         border: none;
@@ -39,12 +45,12 @@
         cursor: pointer;
 }
 
-.ilton a {
+.card-ilton a {
      display: block;
     text-align: left;
 }
 
-.ilton ul {
+.card-ilton ul {
       display: block;
   list-style-type: disc;
   margin-top: 1em;
