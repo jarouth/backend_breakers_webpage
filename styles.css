@@ -1,3 +1,12 @@
+.jack img{
+    max-width: 50%;
+}
+
+.card-jack{
+    background: #007BFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
 .card-jason {
     background: black;
     color: white;
@@ -9,6 +18,14 @@
     text-align: center;
     transition: transform 0.2s;
 }
+.card-jack button{
+    background: black;
+}
+
+.logo{
+    max-width: 10%;
+    align-items: center;
+
 #bio4{
     color: white;
     font-size: 25px;
@@ -23,4 +40,5 @@
 .moodboard-img-jason{
     max-width: 60%;
     padding: 5px;
+
 }

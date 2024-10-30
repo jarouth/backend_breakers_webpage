@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Bio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="imamge/x-icon" href="img/TeamLogo.png">
     <script src="script.js"></script>
     <style>
         body {
@@ -41,7 +42,7 @@
             transition: transform 0.2s;
         }
 
-        .card:hover, .card-jason:hover {
+        .card:hover, .card-jason:hover,.card-jack:hover {
             transform: scale(1.05);
         }
 
@@ -73,32 +74,27 @@
 
 <body>
 
-    <header>
-        <h1>Meet the Backend Breakers</h1>
-    </header>
+<header>
+    <img class="logo" src="img/TeamLogo.png" alt="Backend Breakers Logo">
+   <h1>Meet the Backend Breakers</h1>
+</header>
 
-    <div class="container">
-        <div class="card">
-            <h2>John Doe</h2>
-            <p>Frontend Developer</p>
+<div class="container">
+    <div class="card-jack">
+        <div class="jack">
+            <h2>Jack King</h2>
+            <p>Fullstack Developer</p>
             <button onclick="toggleBio('bio1')">Show Bio</button>
-            <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating
-                responsive web applications.</p>
+                <div class="bio" id="bio1">
+                    <img src="img/Picture%20of%20Jack.jpg" alt="Photo of Jack King">
+                    <img src="img/hacker.png" alt="Picture of a Hacker">
+                    <p>Jack is a skilled fullstack developer who aspires to be an ethical hacker.</p>
+                    <a href="https://github.com/JackK1014">GitHub</a>
+                    <a href="https://www.linkedin.com/in/jack-king-690015290/">LinkedIn</a>
+                </div>
         </div>
-        <div class="card">
-            <h2>Jane Smith</h2>
-            <p>Backend Developer</p>
-            <button onclick="toggleBio('bio2')">Show Bio</button>
-            <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database
-                management.</p>
-        </div>
-        <div class="card">
-            <h2>Emily Johnson</h2>
-            <p>UI/UX Designer</p>
-            <button onclick="toggleBio('bio3')">Show Bio</button>
-            <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
-        </div>
-        <div class="card-jason">
+    </div>
+   <div class="card-jason">
             <h2>Jason Routh</h2>
             <p>Full-Stack Developer</p>
             <button onclick="toggleBio('bio4')">Show Bio</button>
@@ -111,7 +107,6 @@
                 
             </div>
 
-        </div>
     </div>
 
     <script>
@@ -125,6 +120,7 @@
         }
     </script>
 
+<script src="script.js"></script>
 </body>
 
 </html>
