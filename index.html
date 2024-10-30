@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Bio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="imamge/x-icon" href="img/TeamLogo.png">
+    <script src="script.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,12 +15,14 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background: #333;
             color: #fff;
             padding: 10px 0;
             text-align: center;
         }
+
         .container {
             width: 80%;
             margin: 20px auto;
@@ -26,27 +30,33 @@
             flex-wrap: wrap;
             justify-content: space-between;
         }
+
         .card {
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin: 10px;
             padding: 20px;
             flex: 1 1 calc(30% - 40px);
             text-align: center;
             transition: transform 0.2s;
         }
-        .card:hover, .card-jack:hover {
+
+        .card:hover, .card-jason:hover,.card-jack:hover {
             transform: scale(1.05);
         }
+
         h2 {
             margin: 0 0 10px;
         }
+
         .bio {
-            display: none; /* Initially hide the bio section */
+            display: none;
+            /* Initially hide the bio section */
             margin-top: 10px;
             color: #555;
         }
+
         button {
             background: #007BFF;
             color: white;
@@ -55,16 +65,18 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
         button:hover {
             background: #0056b3;
         }
     </style>
 </head>
+
 <body>
 
 <header>
     <img class="logo" src="img/TeamLogo.png" alt="Backend Breakers Logo">
-    <h1>Meet Our Team</h1>
+   <h1>Meet the Backend Breakers</h1>
 </header>
 
 <div class="container">
@@ -82,31 +94,33 @@
                 </div>
         </div>
     </div>
-    <div class="card">
-        <h2>Jane Smith</h2>
-        <p>Backend Developer</p>
-        <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
-    </div>
-    <div class="card">
-        <h2>Emily Johnson</h2>
-        <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
-    </div>
-</div>
+   <div class="card-jason">
+            <h2>Jason Routh</h2>
+            <p>Full-Stack Developer</p>
+            <button onclick="toggleBio('bio4')">Show Bio</button>
+            <div class="bio" id="bio4">
+                <img class="img-jason" src="img/jason-avatar.jpeg" alt="what da dog doin">
+                <img class="moodboard-img-jason"  src="img/iminthemainframe.webp" alt="Im in the mainframe">
+                <p>Jason is an experienced Full-Stack developer with multiple projects under his belt.</p>
+                <a href="https://github.com/jarouth">Github</a>
+                <a href="www.linkedin.com/in/jason-routh-">linkedin</a>
+                
+            </div>
 
-<script>
-    function toggleBio(bioId) {
-        const bio = document.getElementById(bioId);
-        if (bio.style.display === "none" || bio.style.display === "") {
-            bio.style.display = "block";
-        } else {
-            bio.style.display = "none";
+    </div>
+
+    <script>
+        function toggleBio(bioId) {
+            const bio = document.getElementById(bioId);
+            if (bio.style.display === "none" || bio.style.display === "") {
+                bio.style.display = "block";
+            } else {
+                bio.style.display = "none";
+            }
         }
-    }
-</script>
+    </script>
 
 <script src="script.js"></script>
 </body>
+
 </html>
