@@ -1,0 +1,61 @@
+.ilton img {
+    max-width: 50%;
+}
+
+.card-ilton {
+    background: aquamarine;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(30% - 40px);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.ilton button {
+        background: black;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+}
+
+.ilton a {
+     display: block;
+    text-align: left;
+}
+
+.ilton ul {
+      display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+    color: black;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+    color: white;
+}
+
+ol {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+    color: white;
+    text-align: left;
+}

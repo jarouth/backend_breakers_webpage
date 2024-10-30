@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Bio</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -61,7 +62,22 @@
 <body>
 
 <header>
-    <h1>Meet Our Team</h1>
+    <h1>Backend Breakers</h1>
+    <button onclick="toggleBio('bio-mission')">Mission Statement</button>
+    <div class="bio" id="bio-mission">
+            <ul>
+                <li>We value creating software that can better the lives of others while creating a strong community</li>
+                <li>As computer scientist, our strengths is our ability to work as a team and to create software that can enhance the lives of others.</li>
+            </ul>
+    </div>
+    <button onclick="toggleBio('bio-rules')">Rules</button>
+    <div class="bio" id="bio-rules">
+            <ol>
+                <li>Be respectful to all team members</li>
+                <li>Be prompt and show up on time</li>
+                <li>Allow all ideas to be heard</li>
+            </ol>
+    </div>
 </header>
 
 <div class="container">
@@ -77,11 +93,20 @@
         <button onclick="toggleBio('bio2')">Show Bio</button>
         <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
     </div>
-    <div class="card">
-        <h2>Emily Johnson</h2>
-        <p>UI/UX Designer</p>
+    <div class="card-ilton">
+        <div class="ilton">
+        <h2>Ilton da Costa Neto</h2>
+        <p>Full Stack</p>
         <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+            <div class="bio" id="bio3">
+                <img src="img/iltondacosta.jpg" alt="Photo of Ilton da Costa Neto">
+                <p>Ilton is a full stack developer with many years of Java experience.</p>
+                <ul>
+                    <li><a href="https://github.com/Idacos">GitHub</a></li>
+                    <li><a href=https://www.linkedin.com/in/ilton-da-costa-neto/">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -96,5 +121,6 @@
     }
 </script>
 
+<script src="script.js"></script>
 </body>
 </html>
