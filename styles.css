@@ -6,6 +6,23 @@
     background: aquamarine;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.jack img{
+    max-width: 50%;
+}
+
+.card-jack{
+    background: #007BFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card-jason {
+    background: black;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
     flex: 1 1 calc(30% - 40px);
@@ -58,4 +75,32 @@ ol {
   padding-left: 40px;
     color: white;
     text-align: left;
+}
+
+.card-jack button{
+    background: black;
+}
+
+.logo{
+    max-width: 10%;
+    align-items: center;
+}
+
+#bio4{
+    color: white;
+    font-size: 25px;
+}
+
+.img-jason{
+    max-width: 40%;
+}
+
+.card-jason button{
+    background-color: red;
+    size-adjust: 40%;
+}
+
+.moodboard-img-jason{
+    max-width: 60%;
+    padding: 5px;
 }
