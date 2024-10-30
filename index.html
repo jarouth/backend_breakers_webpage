@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Bio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="imamge/x-icon" href="img/TeamLogo.png">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -34,7 +36,7 @@
             text-align: center;
             transition: transform 0.2s;
         }
-        .card:hover {
+        .card:hover, .card-jack:hover {
             transform: scale(1.05);
         }
         h2 {
@@ -61,15 +63,24 @@
 <body>
 
 <header>
+    <img class="logo" src="img/TeamLogo.png" alt="Backend Breakers Logo">
     <h1>Meet Our Team</h1>
 </header>
 
 <div class="container">
-    <div class="card">
-        <h2>John Doe</h2>
-        <p>Frontend Developer</p>
-        <button onclick="toggleBio('bio1')">Show Bio</button>
-        <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
+    <div class="card-jack">
+        <div class="jack">
+            <h2>Jack King</h2>
+            <p>Fullstack Developer</p>
+            <button onclick="toggleBio('bio1')">Show Bio</button>
+                <div class="bio" id="bio1">
+                    <img src="img/Picture%20of%20Jack.jpg" alt="Photo of Jack King">
+                    <img src="img/hacker.png" alt="Picture of a Hacker">
+                    <p>Jack is a skilled fullstack developer who aspires to be an ethical hacker.</p>
+                    <a href="https://github.com/JackK1014">GitHub</a>
+                    <a href="https://www.linkedin.com/in/jack-king-690015290/">LinkedIn</a>
+                </div>
+        </div>
     </div>
     <div class="card">
         <h2>Jane Smith</h2>
@@ -96,5 +107,6 @@
     }
 </script>
 
+<script src="script.js"></script>
 </body>
 </html>
