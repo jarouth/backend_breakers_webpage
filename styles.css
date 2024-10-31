@@ -8,7 +8,7 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin: 10px;
     padding: 20px;
-    flex: 1 1 calc(30% - 40px);
+    flex: 1 1 calc(20% - 40px);
     text-align: center;
     transition: transform 0.2s;
 }
@@ -19,7 +19,7 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin: 10px;
     padding: 20px;
-    flex: 1 1 calc(30% - 40px);
+    flex: 1 1 calc(20% - 40px);
     text-align: center;
     transition: transform 0.2s;
 }
@@ -31,7 +31,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
-    flex: 1 1 calc(30% - 40px);
+    flex: 1 1 calc(20% - 40px);
     text-align: center;
     transition: transform 0.2s;
 }
@@ -61,6 +61,45 @@
     color: black;
 }
 
+.card-dylan {
+    background: #800020;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(20% - 40px);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card-dylan:hover {
+    transform: scale(1.05);
+}
+
+.card-dylan button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#bio-dylan img {
+    max-width: 50%;
+    margin: 10px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+#bio-dylan {
+    color: white;
+}
 ul {
   display: block;
   list-style-type: disc;
